@@ -17,41 +17,81 @@ include("includes/html-codes.php");
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>gift - Truth + Beauty Spa</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+<meta name="description" content="Advanced skin solutions, beauty biology and correct maintenance, Truth and Beauty Spa, located in Roslyn Heights Nassau County enables your skin to generate younger cells both inside and out." />
+  <meta name="keywords" content="Roslyn Heights spa, Roslyn Heights salon, Roslyn Heights massage, Nassau county spa, Nassau county salon, Nassau county massage" />
   <meta name="author" content="humans.txt">
   
-  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
   
   <!--Facebook Metadata /-->
   <meta property="fb:page_id" content="" />
-	<meta property="og:image" content="http://truthandbeautyspa.com/img/truth-and-beauty-spa_social.png" />
-	<meta property="og:description" content="Advanced Skin Solutions, Beauty Biology and Correct Maintenance. Truth + Beauty enables your skin to generate younger cells both inside and out."/>
-	<meta property="og:title" content="Truth+Beauty Spa"/>
+  <meta property="og:image" content="http://truthandbeautyspa.com/img/truth-and-beauty-spa_social.png" />
+  <meta property="og:description" content="Advanced Skin Solutions, Beauty Biology and Correct Maintenance. Truth + Beauty enables your skin to generate younger cells both inside and out."/>
+  <meta property="og:title" content="Truth+Beauty Spa"/>
   
   <!--Google+ Metadata /-->
-	<meta itemprop="name" content="Truth+Beauty Spa">
-	<meta itemprop="description" content="Advanced Skin Solutions, Beauty Biology and Correct Maintenance. Truth + Beauty enables your skin to generate younger cells both inside and out.">
-	<meta itemprop="image" content="http://truthandbeautyspa.com/img/truth-and-beauty_logo.png">
+  <meta itemprop="name" content="Truth+Beauty Spa">
+  <meta itemprop="description" content="Advanced Skin Solutions, Beauty Biology and Correct Maintenance. Truth and Beauty Spa enables your skin to generate younger cells both inside and out.">
+  <meta itemprop="image" content="http://truthandbeautyspa.com/img/truth-and-beauty_logo.png">
   
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  <link rel="stylesheet" href="../css/trubu.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="../css/trubu.css">
+  <link rel="stylesheet" href="../css/trubu-animation.css">
   <link rel="stylesheet" href="../css/socialize-bookmarks.css">
   
   <!--[if IE]>
-	<link rel="stylesheet" type="text/css" href="css/trubu-all-ie.css" />
+	<link rel="stylesheet" type="text/css" href="../css/trubu-all-ie.css" />
 <![endif]-->
   
   <script src="../js/libs/modernizr-2.0.6.min.js"></script>
-</head>
+
+  <script language="JavaScript1.2">
+<!--
+isIE=document.all;
+isNN=!document.all&&document.getElementById;
+isN4=document.layers;
+isActive=false;
+
+
+
+function ToggleFloatingLayer(DivID, iState) // 1 visible, 0 hidden
+{
+    if(document.layers)    //NN4+
+    {
+       document.layers[DivID].visibility = iState ? "show" : "hide";
+    }
+    else if(document.getElementById)    //gecko(NN6) + IE 5+
+    {
+        var obj = document.getElementById(DivID);
+        obj.style.visibility = iState ? "visible" : "hidden";
+    }
+    else if(document.all) // IE 4
+    {
+        document.all[DivID].style.visibility = iState ? "visible" : "hidden";
+    }
+}
+
+
+// -->
+</script>
+
+<script type="text/javascript" src="//use.typekit.net/sbc8ysk.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head> <!-- end of head -->
+
 
 <body id="gift">
-	<div class="container">
+  <div class="wrapper"> <!-- changed from container class -->
     <header id="top-header">
             <a class="logo" href="index.php" title="Truth + Beauty - Skin Brilliance"><img src="img/truth-and-beauty_logo.png" alt="Truth + Beauty - Skin Brilliance"></a>
             
             <?php navCode(); ?>
             <div style="clear:both"></div>
-       </header>
+       </header> <!-- end of header -->
+
   	<div id="canvas">
        <img src="../img/blue.jpeg" class="bg" />
         <section class="row first-child">
@@ -63,78 +103,57 @@ include("includes/html-codes.php");
         </section>
         
         <section class="row"> 
-            
-             <div class="eight columns push_four">
+            <div class="eight columns push_four">
                 <h1>a true gift</h1>
-             </div>
+            </div>
          </section>    
          
         
         <section class="row">
             <div class="four columns push_four">
-            	
-                
-        		<h2>share the gift of beauty</h2>
-              
-					<p>Indulge the special people in your life with a gift they'll truly enjoy! Available in denominations starting at $25, Truth + Beauty Gift Cards can be redeemed for spa services or gift items from our boutique. Gift Cards come beautifully wrapped in our signature Truth + Beauty gift bag.  </p>
-                    
-                    <p>Simply select the amount and click "Continue" or call us at (516) 625-7000.</p>
+ 	       		<h2>share the gift of beauty</h2>
+					     <p>Indulge the special people in your life with a gift they'll truly enjoy! Available in denominations starting at $25, Truth + Beauty Gift Cards can be redeemed for spa services or gift items from our boutique. Gift Cards come beautifully wrapped in our signature Truth + Beauty gift bag.  </p>
+               <p>Simply select the amount and click "Continue" or call us at (516) 625-7000.</p>
                 
                 <form action="sim_gc.php" method="post" id="checkout">
-                <input type="hidden" name="shipping" id="shipping" value="5.80">
-                <select size="1" name="gc_amount" id="gc_amount" class="SizeText">
-<option value="25">25 Dollars</option>
-<option value="50">50 Dollars</option>
-<option value="75">75 Dollars</option>
-<option value="100">100 Dollars</option>
-<option value="125">125 Dollars</option>
-<option value="150">150 Dollars</option>
-<option value="175">175 Dollars</option>
-<option value="200">200 Dollars</option>
-<option value="250">250 Dollars</option>
-<option value="300">300 Dollars</option>
-<option value="400">400 Dollars</option>
-<option value="500">500 Dollars</option>
-<option value="600">600 Dollars</option>
-<option value="700">700 Dollars</option>
-<option value="800">800 Dollars</option>
-<option value="900">900 Dollars</option>
-<option value="1000">1000 Dollars</option>
-</select>
-<div class="clearfix"> </div>
-<!-- ################################### -->
-				<input type='submit' class="primary button medium"  value="Contine to next step">
-               
-                </form>
-                   
-
-			</div>
+                  <input type="hidden" name="shipping" id="shipping" value="5.80">
+                  <select size="1" name="gc_amount" id="gc_amount" class="SizeText">
+                      <option value="25">25 Dollars</option>
+                      <option value="50">50 Dollars</option>
+                      <option value="75">75 Dollars</option>
+                      <option value="100">100 Dollars</option>
+                      <option value="125">125 Dollars</option>
+                      <option value="150">150 Dollars</option>
+                      <option value="175">175 Dollars</option>
+                      <option value="200">200 Dollars</option>
+                      <option value="250">250 Dollars</option>
+                      <option value="300">300 Dollars</option>
+                      <option value="400">400 Dollars</option>
+                      <option value="500">500 Dollars</option>
+                      <option value="600">600 Dollars</option>
+                      <option value="700">700 Dollars</option>
+                      <option value="800">800 Dollars</option>
+                      <option value="900">900 Dollars</option>
+                      <option value="1000">1000 Dollars</option>
+                  </select>
+            
+                  <div class="clearfix"> </div>
+                  <!-- ################################### -->
+			           <input type='submit' class="primary button medium"  value="Contine to next step">
+               </form>
+            </div>
             
             <div class="four columns">
             	<img src="../img/gift-cards_truth_and_beauty.jpg" alt="truth + beauty gift cards - Purchase now!" />
-             
-
-			</div>
-            
-            
-            
-      </section>
+            </div>
+        </section>
          
         <section class="row">
-            <div class="eight columns push_four">
-            	
-            
-
-			</div>
-            
-            
-            
-            
-            
-      </section>
+            <div class="eight columns push_four"></div>
+        </section>
         
-  </div> <!--! end of #canvas -->
-  </div> <!--! end of #container -->
+    </div> <!--! end of #canvas -->
+  </div> <!-- end of wrapper -->
 	 <?php footerCode(); ?>
     
          
